@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+.skills-section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-heading {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.skill-bar {
+    flex: 1 1 48%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.skill-bar h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.progress {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    height: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar {
+    height: 100%;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 30px;
+    width: 0;
+    transition: width 1.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.progress-bar span {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+}
+
+.color-1 {
+    background-color: #3498db;
+}
+
+.color-2 {
+    background-color: #2ecc71;
+}
+
+.color-3 {
+    background-color: #e74c3c;
+}
+
+.color-4 {
+    background-color: #f39c12;
+}
+
+.color-5 {
+    background-color: #9b59b6;
+}
+
+.color-6 {
+    background-color: #1abc9c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skills-heading {
+        font-size: 28px;
+    }
+
+    .skill-bar {
+        flex: 1 1 100%;
+    }
+
+    .skill-bar h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .skills-heading {
+        font-size: 24px;
+    }
+
+    .skill-bar h3 {
+        font-size: 14px;
+    }
+
+    .progress-bar {
+        font-size: 12px;
+    }
+}
